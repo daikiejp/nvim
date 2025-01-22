@@ -55,6 +55,25 @@ Currently using **lazy.nvim**
 - **Lualine**: Status line
 - **gitsigns**: Git signs
 
+## 🔑 Keybindings Usage
+
+ℹ️ <leader> is set to the spacebar (<Space>)
+
+Keybinding | Mode | Action | Description
+<leader>pv | n | vim.cmd.Ex | Open file explorer (netrw)
+<leader>ff | n | Telescope find_files | Find files
+<leader>pf | n | Telescope git_files | Find only git files
+<leader>fg | n | Telescope live_grep | Search text in files
+<leader>fb | n | Telescope buffers | List open buffers
+<leader>fh | n | Telescope help_tags | Search help tags
+<leader>u | n | UndotreeToggle | Toggle undo history visualizer
+<leader>ha | n | harpoon.mark.add_file() | Add current file to Harpoon list
+<leader>hm | n | harpoon.ui.toggle_quick_menu() | Show Harpoon menu
+<leader>gs | n | :Git | Open Git status (via Fugitive)
+K | n | vim.lsp.buf.hover() | Show documentation for symbol under cursor
+gd | n | vim.lsp.buf.definition() | Go to definition
+<leader>ca | n | vim.lsp.buf.code_action() | Trigger LSP code actions
+
 ## 👏 Thanks
 
 - To [@ThePrimeagen](https://www.youtube.com/c/theprimeagen) to follow his tutorial [from 0 to LSP](https://www.youtube.com/watch?v=w7i4amO_zaE) - Oudated
