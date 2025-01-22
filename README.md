@@ -25,7 +25,7 @@ Read the [prerequisites file](PREREQUISITES.md) in order to see the prerequisite
             ├── lsp.lua
             ├── cmp.lua
             ├── lualine.lua
-            └──  gitsigns.lua
+            └── gitsigns.lua
 ```
 
 ## 🛠️ INSTALLATION
@@ -57,7 +57,7 @@ Currently using **lazy.nvim**
 
 ## 👏 Thanks
 
-- To @ThePrimeagen to follow his tutorial [from 0 to LSP](https://www.youtube.com/watch?v=w7i4amO_zaE) - Oudated
+- To [@ThePrimeagen](https://www.youtube.com/c/theprimeagen) to follow his tutorial [from 0 to LSP](https://www.youtube.com/watch?v=w7i4amO_zaE) - Oudated
 - [LSP Zero](https://lsp-zero.netlify.app/docs/getting-started.html) for no more complex installations.
 
 ## 👤 Author
