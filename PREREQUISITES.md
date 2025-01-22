@@ -1,6 +1,4 @@
-# Installation
-
-## 🧰 Prerequisites
+# 🧰 Prerequisites
 
 - Homebrew
 - Git

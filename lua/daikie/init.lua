@@ -1,2 +1,2 @@
 -- Daikie's Config
-print("Hello from Daikie!")
+require("daikie.plugins")
