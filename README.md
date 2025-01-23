@@ -60,6 +60,7 @@ Currently using **lazy.nvim**
 ℹ️ <leader> is set to the spacebar (<Space>)
 
 Keybinding | Mode | Action | Description
+-- | -- | -- | --
 <leader>pv | n | vim.cmd.Ex | Open file explorer (netrw)
 <leader>ff | n | Telescope find_files | Find files
 <leader>pf | n | Telescope git_files | Find only git files
