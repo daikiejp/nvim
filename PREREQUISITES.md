@@ -5,6 +5,7 @@
 - Neovim (0.11 recommended)
 - Node
 - Ripgrep
+- fd
 
 ```bash
 ## Homebrew
@@ -21,4 +22,9 @@ brew install node
 
 ## ripgrep (for Telescope)
 brew install ripgrep
-```
+
+## fd (for Telescope)
+brew install fd
+
+## gcc, clang and make (for Telescope-fzf dependencies)
+brew install gcc clang make
