@@ -31,6 +31,9 @@ keymap.set("n", "<leader>gs", vim.cmd.Git)
 keymap.set("n", "<leader>hp", "<cmd>Gitsigns preview_hunk<cr>")
 keymap.set("n", "<leader>tb", "<cmd>Gitsigns toggle_current_line_blame<cr>")
 
+-- Cellular automaton
+keymap.set("n", "<C-F>", "<cmd>CellularAutomaton make_it_rain<cr>")
+
 -- LSP actions
 keymap.set("n", "K", vim.lsp.buf.hover)
 keymap.set("n", "gd", vim.lsp.buf.definition)
