@@ -25,7 +25,9 @@ Read the [prerequisites file](PREREQUISITES.md) in order to see the prerequisite
             ├── lsp.lua
             ├── cmp.lua
             ├── lualine.lua
-            └── gitsigns.lua
+            ├── gitsigns.lua
+            └── cellular-automaton.lua
+
 ```
 
 ## 🛠️ INSTALLATION
@@ -54,6 +56,7 @@ Currently using **lazy.nvim**
 - **nvim-cmp**: Autocompletion
 - **Lualine**: Status line
 - **gitsigns**: Git signs
+- **cellular-automaton**: A useless plugin you can procrastinate
 
 ## 🔑 Keybindings Usage
 
@@ -73,6 +76,7 @@ Keybinding | Mode | Action | Description
 &lt;leader&gt;gs | n | :Git | Open Git status (via Fugitive)
 &lt;leader&gt;hp | n | :Gitsigns preview_hunk | Git preview hunks
 &lt;leader&gt;tb | n | :Gitsigns toggle_current_line_blame | Git blame current line
+&lt;leader&gt;C-F | n | :CellularAutomaton make_it_rain | Make it rain! duh!
 K | n | vim.lsp.buf.hover() | Show documentation for symbol under cursor
 gd | n | vim.lsp.buf.definition() | Go to definition
 &lt;leader&gt;ca | n | vim.lsp.buf.code_action() | Trigger LSP code actions
