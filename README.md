@@ -61,21 +61,21 @@ Currently using **lazy.nvim**
 
 Keybinding | Mode | Action | Description
 -- | -- | -- | --
-&gt;leader&gt;pv | n | vim.cmd.Ex | Open file explorer (netrw)
-&gt;leader&gt;ff | n | Telescope find_files | Find files
-&gt;leader&gt;pf | n | Telescope git_files | Find only git files
-&gt;leader&gt;fg | n | Telescope live_grep | Search text in files
-&gt;leader&gt;fb | n | Telescope buffers | List open buffers
-&gt;leader&gt;fh | n | Telescope help_tags | Search help tags
-&gt;leader&gt;u | n | UndotreeToggle | Toggle undo history visualizer
-&gt;leader&gt;ha | n | harpoon.mark.add_file() | Add current file to Harpoon list
-&gt;leader&gt;hm | n | harpoon.ui.toggle_quick_menu() | Show Harpoon menu
-&gt;leader&gt;gs | n | :Git | Open Git status (via Fugitive)
-&gt;leader&gt;hp | n | :Gitsigns preview_hunk | Git preview hunks
-&gt;leader&gt;tb | n | :Gitsigns toggle_current_line_blame | Git blame current line
+&lt;leader&gt;pv | n | vim.cmd.Ex | Open file explorer (netrw)
+&lt;leader&gt;ff | n | Telescope find_files | Find files
+&lt;leader&gt;pf | n | Telescope git_files | Find only git files
+&lt;leader&gt;fg | n | Telescope live_grep | Search text in files
+&lt;leader&gt;fb | n | Telescope buffers | List open buffers
+&lt;leader&gt;fh | n | Telescope help_tags | Search help tags
+&lt;leader&gt;u | n | UndotreeToggle | Toggle undo history visualizer
+&lt;leader&gt;ha | n | harpoon.mark.add_file() | Add current file to Harpoon list
+&lt;leader&gt;hm | n | harpoon.ui.toggle_quick_menu() | Show Harpoon menu
+&lt;leader&gt;gs | n | :Git | Open Git status (via Fugitive)
+&lt;leader&gt;hp | n | :Gitsigns preview_hunk | Git preview hunks
+&lt;leader&gt;tb | n | :Gitsigns toggle_current_line_blame | Git blame current line
 K | n | vim.lsp.buf.hover() | Show documentation for symbol under cursor
 gd | n | vim.lsp.buf.definition() | Go to definition
-&gt;leader&gt;ca | n | vim.lsp.buf.code_action() | Trigger LSP code actions
+&lt;leader&gt;ca | n | vim.lsp.buf.code_action() | Trigger LSP code actions
 
 ## 👏 Thanks
 
