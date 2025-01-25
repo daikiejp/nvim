@@ -26,8 +26,8 @@ Read the [prerequisites file](PREREQUISITES.md) in order to see the prerequisite
             ├── cmp.lua
             ├── lualine.lua
             ├── gitsigns.lua
-            └── cellular-automaton.lua
-
+            ├── cellular-automaton.lua
+            └── wakatime.lua
 ```
 
 ## 🛠️ INSTALLATION
@@ -57,6 +57,7 @@ Currently using **lazy.nvim**
 - **Lualine**: Status line
 - **gitsigns**: Git signs
 - **cellular-automaton**: A useless plugin you can procrastinate
+- **WakaTime**: Programming time tracking and metrics
 
 ## 🔑 Keybindings Usage
 
