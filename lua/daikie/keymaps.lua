@@ -27,6 +27,10 @@ keymap.set("n", "<C-ñ>", function() require("harpoon.ui").nav_file(4) end)
 -- Git
 keymap.set("n", "<leader>gs", vim.cmd.Git)
 
+-- Git Signs
+keymap.set("n", "<leader>hp", "<cmd>Gitsigns preview_hunk<cr>")
+keymap.set("n", "<leader>tb", "<cmd>Gitsigns toggle_current_line_blame<cr>")
+
 -- LSP actions
 keymap.set("n", "K", vim.lsp.buf.hover)
 keymap.set("n", "gd", vim.lsp.buf.definition)
