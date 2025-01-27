@@ -2,6 +2,9 @@ vim.g.mapleader = " "
 
 local keymap = vim.keymap
 
+-- M for on_attach (LSP)
+local M = {}
+
 -- File Explorer
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
@@ -39,6 +42,18 @@ keymap.set("n", "<leader>tb", "<cmd>Gitsigns toggle_current_line_blame<cr>")
 keymap.set("n", "<C-F>", "<cmd>CellularAutomaton make_it_rain<cr>")
 
 -- LSP actions
-keymap.set("n", "K", vim.lsp.buf.hover)
-keymap.set("n", "gd", vim.lsp.buf.definition)
-keymap.set("n", "<leader>ca", vim.lsp.buf.code_action)
+M.on_attach = function(_, bufnr)
+  local bufmap = function(mode, lhs, rhs, desc)
+    vim.keymap.set(mode, lhs, rhs, { buffer = bufnr, desc = desc })
+  end
+
+  bufmap("n", "K", vim.lsp.buf.hover, "LSP Hover")
+  bufmap("n", "gd", vim.lsp.buf.definition, "LSP Go to Definition")
+  bufmap("n", "<leader>ca", vim.lsp.buf.code_action, "LSP Code Action")
+  --bufmap("n", "<leader>rn", vim.lsp.buf.rename, "LSP Rename")
+  --bufmap("n", "[d", vim.diagnostic.goto_prev, "Prev Diagnostic")
+  --bufmap("n", "]d", vim.diagnostic.goto_next, "Next Diagnostic")
+  --bufmap("n", "<leader>e", vim.diagnostic.open_float, "Diagnostic Float")
+end
+
+return M
