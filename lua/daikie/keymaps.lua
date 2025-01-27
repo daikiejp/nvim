@@ -5,6 +5,10 @@ local keymap = vim.keymap
 -- File Explorer
 keymap.set("n", "<leader>pv", vim.cmd.Ex)
 
+-- Move Lines
+keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
 -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
 keymap.set("n", "<leader>pf", "<cmd>Telescope git_files<cr>")
