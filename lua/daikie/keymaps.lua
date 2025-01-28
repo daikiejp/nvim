@@ -41,6 +41,9 @@ keymap.set("n", "<leader>tb", "<cmd>Gitsigns toggle_current_line_blame<cr>")
 -- Cellular automaton
 keymap.set("n", "<C-F>", "<cmd>CellularAutomaton make_it_rain<cr>")
 
+---Formatter
+keymap.set("n", "<leader>fo", function() require("conform").format({ bufnr = 0 }) end)
+
 -- LSP actions
 M.on_attach = function(_, bufnr)
   local bufmap = function(mode, lhs, rhs, desc)

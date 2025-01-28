@@ -26,6 +26,8 @@ return {
                 -- java = { "google_java_format", "clang_format", stop_after_first = true },
             }
         })
+
+        require("conform").format { async = true, lsp_fallback = true }
     end
 }
 
