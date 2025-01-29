@@ -53,7 +53,7 @@ brew install gcc clang make
 | lua | stylua | brew install stylua |
 | python | isort | brew install isort |
 | python | black | brew install black |
-| javascript | prettier | brew install prettier |
+| javascript | prettierd / prettier | brew install prettierd / prettier |
 | typescript | (same as above) | (same as above) |
 | javascriptreact | (same as above) | (same as above) |
 | typescriptreact | (same as above) | (same as above) |
