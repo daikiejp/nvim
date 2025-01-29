@@ -31,18 +31,38 @@ brew install gcc clang make
 ```
 
 ## LSP dependencies
-```bash
+
 | Language | Name | Package install |
 | -- | -- | -- |
 | lua | lua_ls | brew install lua-language-server |
 | python | pyright | brew install pyright |
 | javascript/typescript | ts_ls (tsserver deprecated) | brew install typescript-language-server |
 | eslint | eslint | brew install vscode-langservers-extracted |
-| html | html | (same above) |
-| css | cssls | (same above) |
-| json | jsonls | (sabe above) |
+| html | html | (same as above) |
+| css | cssls | (same as above) |
+| json | jsonls | (same as above) |
 | markdown | marksman  | brew install marksman |
 | yaml | yamlls | brew install yaml-language-server |
 
-# Note - If some npm package is uninstalled. Need install brew package again.
-```
+> Note - If some npm package is uninstalled. Need install brew package again.
+
+### Conform Formatter
+
+| Language | Name | Package install |
+| -- | -- | -- |
+| lua | stylua | brew install stylua |
+| python | isort | brew install isort |
+| python | black | brew install black |
+| javascript | prettier | brew install prettier |
+| typescript | (same as above) | (same as above) |
+| javascriptreact | (same as above) | (same as above) |
+| typescriptreact | (same as above) | (same as above) |
+| ["javascript.jsx"] | (same as above) | (same as above) |
+| ["typescript.tsx"] | (same as above) | (same as above) |
+| markdown | (same as above) | (same as above) |
+| html | (same as above) | (same as above) |
+| css | (same as above) | (same as above) |
+| yaml | (same as above) | (same as above) |
+| json | (same as above) | (same as above) |
+
+
