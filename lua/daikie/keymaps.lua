@@ -6,11 +6,40 @@ local keymap = vim.keymap
 local M = {}
 
 -- File Explorer
-keymap.set("n", "<leader>pv", vim.cmd.Ex)
+keymap.set("n", "<leader>e", vim.cmd.Ex)
 
--- Move Lines
+-- Scroll and Center
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
+
+-- Navigation and Center
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+-- Copy, Paste, Delete
+--vim.keymap.set({ "n", "v" }, "<leader>p", [["_dP]])
+vim.keymap.set({ "n", "v" }, "<leader>y", [["+y]])
+vim.keymap.set("n", "<leader>Y", [["+Y]])
+vim.keymap.set({ "n", "v" }, "<leader>d", '\"_dw')
+
+-- Exit and Save Histoy
+vim.keymap.set("i", "<C-c>", "<Esc>")
+
+-- Move Lines 
 keymap.set("v", "J", ":m '>+1<CR>gv=gv")
 keymap.set("v", "K", ":m '<-2<CR>gv=gv")
+
+-- Replace Text All File
+vim.keymap.set("n", "<leader>s", [[:%s/\<<C-r><C-w>\>/<C-r><C-w>/gI<Left><Left><Left>]])
+
+-- Make Executable
+vim.keymap.set("n", "<leader>x", "<cmd>!chmod +x %<CR>", { silent = true })
+
+-- Next, Prev. Linter, Error, Result, Test, Formatter
+vim.keymap.set("n", "<C-k>", "<cmd>cnext<CR>zz")
+vim.keymap.set("n", "<C-j>", "<cmd>cprev<CR>zz")
+vim.keymap.set("n", "<leader>k", "<cmd>lnext<CR>zz")
+vim.keymap.set("n", "<leader>j", "<cmd>lprev<CR>zz")
 
 -- Telescope
 keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>")
@@ -31,9 +60,6 @@ keymap.set("n", "<C-k>", function() require("harpoon.ui").nav_file(2) end)
 keymap.set("n", "<C-l>", function() require("harpoon.ui").nav_file(3) end)
 keymap.set("n", "<C-ñ>", function() require("harpoon.ui").nav_file(4) end)
 
--- Git
-keymap.set("n", "<leader>gs", vim.cmd.Git)
-
 -- Git Signs
 keymap.set("n", "<leader>hp", "<cmd>Gitsigns preview_hunk<cr>")
 keymap.set("n", "<leader>tb", "<cmd>Gitsigns toggle_current_line_blame<cr>")
@@ -42,7 +68,7 @@ keymap.set("n", "<leader>tb", "<cmd>Gitsigns toggle_current_line_blame<cr>")
 keymap.set("n", "<C-F>", "<cmd>CellularAutomaton make_it_rain<cr>")
 
 ---Formatter
-keymap.set("n", "<leader>fo", function() require("conform").format({ bufnr = 0 }) end)
+keymap.set({"n", "v"}, "<leader>fo", function() require("conform").format({ bufnr = 0 }) end)
 
 -- LSP actions
 M.on_attach = function(_, bufnr)
