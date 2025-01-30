@@ -14,6 +14,9 @@ Read the [prerequisites file](PREREQUISITES.md) in order to see the prerequisite
 └── lua/
     └── daikie/
         ├── init.lua        # Main entrypoint
+        ├── keymaps.lua     # Keymaps
+        ├── gitmaps.lua     # Git Keymaps
+        ├── set.lua         # Neovim config
         ├── plugins.lua     # Lazy configuration
         └── lazy/           # One file per plugin
             ├── telescope.lua
@@ -22,6 +25,8 @@ Read the [prerequisites file](PREREQUISITES.md) in order to see the prerequisite
             ├── undotree.lua
             ├── fugitive.lua
             ├── tokyonight.lua
+            ├── noice.lua
+            ├── conform.lua
             ├── lsp.lua
             ├── cmp.lua
             ├── lualine.lua
@@ -52,6 +57,8 @@ Currently using **lazy.nvim**
 - **Undotree**: Undo history visualizer
 - **Fugitive**: Git integration
 - **tokyonight**: Colorscheme
+- **Noice**: UI for messages, cmdline and popupmenu
+- **conform**: Formatter
 - **LSP**: Language Server Protocol with support for Lua, Python, JS, Rust
 - **nvim-cmp**: Autocompletion
 - **Lualine**: Status line
@@ -65,7 +72,7 @@ Currently using **lazy.nvim**
 
 Keybinding | Mode | Action | Description
 -- | -- | -- | --
-&lt;leader&gt;pv | n | vim.cmd.Ex | Open file explorer (netrw)
+&lt;leader&gt;e | n | vim.cmd.Ex | Open file explorer (netrw)
 &lt;leader&gt;ff | n | Telescope find_files | Find files
 &lt;leader&gt;pf | n | Telescope git_files | Find only git files
 &lt;leader&gt;fg | n | Telescope live_grep | Search text in files
@@ -81,6 +88,8 @@ Keybinding | Mode | Action | Description
 K | n | vim.lsp.buf.hover() | Show documentation for symbol under cursor
 gd | n | vim.lsp.buf.definition() | Go to definition
 &lt;leader&gt;ca | n | vim.lsp.buf.code_action() | Trigger LSP code actions
+
+> More Git keymaps at: gitmaps.lua
 
 ## 👏 Thanks
 
