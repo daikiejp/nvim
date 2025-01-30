@@ -39,7 +39,7 @@ end, { desc = "Git create branch" })
 keymap.set("n", "<leader>gcft", function()
 	vim.ui.input({ prompt = " feat " }, function(input)
 		if input then
-			vim.cmd("Git commit -m 'feat: " .. input .. "'")
+			vim.cmd("Git commit -S -m 'feat: " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit feat" })
@@ -47,7 +47,7 @@ end, { desc = "Git commit feat" })
 keymap.set("n", "<leader>gcch", function()
     vim.ui.input({ prompt = " chore " }, function(input)
         if input then
-            vim.cmd("Git commit -m 'chore: " .. input .. "'")
+            vim.cmd("Git commit -S -m 'chore: " .. input .. "'")
         end
     end)
 end, { desc = "Git commit chore" })
@@ -55,7 +55,7 @@ end, { desc = "Git commit chore" })
 keymap.set("n", "<leader>gcfx", function()
 	vim.ui.input({ prompt = " fix " }, function(input)
 		if input then
-			vim.cmd("Git commit -m 'fix: " .. input .. "'")
+			vim.cmd("Git commit -S -m 'fix: " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit fix" })
@@ -63,7 +63,7 @@ end, { desc = "Git commit fix" })
 keymap.set("n", "<leader>gcdc", function()
 	vim.ui.input({ prompt = " docs " }, function(input)
 		if input then
-			vim.cmd("Git commit -m 'docs: " .. input .. "'")
+			vim.cmd("Git commit -S -m 'docs: " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit docs" })
@@ -72,7 +72,7 @@ end, { desc = "Git commit docs" })
 keymap.set("n", "<leader>gcst", function()
 	vim.ui.input({ prompt = " style " }, function(input)
 		if input then
-			vim.cmd("Git commit -m 'style: " .. input .. "'")
+			vim.cmd("Git commit -S -m 'style: " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit style" })
@@ -81,7 +81,7 @@ end, { desc = "Git commit style" })
 keymap.set("n", "<leader>gcrf", function()
 	vim.ui.input({ prompt = " refactor " }, function(input)
 		if input then
-			vim.cmd("Git commit -m 'refactor: " .. input .. "'")
+			vim.cmd("Git commit -S -m 'refactor: " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit refactor" })
@@ -90,7 +90,7 @@ end, { desc = "Git commit refactor" })
 keymap.set("n", "<leader>gcts", function()
 	vim.ui.input({ prompt = " test " }, function(input)
 		if input then
-			vim.cmd("Git commit -m 'test: " .. input .. "'")
+			vim.cmd("Git commit -S -m 'test: " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit test" })
@@ -99,7 +99,7 @@ end, { desc = "Git commit test" })
 keymap.set("n", "<leader>gcci", function()
 	vim.ui.input({ prompt = " ci " }, function(input)
 		if input then
-			vim.cmd("Git commit -m 'ci: " .. input .. "'")
+			vim.cmd("Git commit -S -m 'ci: " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit ci" })
@@ -108,7 +108,7 @@ end, { desc = "Git commit ci" })
 keymap.set("n", "<leader>gcpf", function()
 	vim.ui.input({ prompt = " performance " }, function(input)
 		if input then
-			vim.cmd("Git commit -m 'perf: " .. input .. "'")
+			vim.cmd("Git commit -S -m 'perf: " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit performance" })
@@ -117,7 +117,7 @@ end, { desc = "Git commit performance" })
 keymap.set("n", "<leader>gcbu", function()
 	vim.ui.input({ prompt = " build " }, function(input)
 		if input then
-			vim.cmd("Git commit -m 'build: " .. input .. "'")
+			vim.cmd("Git commit -S -m 'build: " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit build" })
@@ -127,7 +127,7 @@ end, { desc = "Git commit build" })
 keymap.set("n", "<leader>gca", function()
 	vim.ui.input({ prompt = "[Add]" }, function(input)
 		if input then
-			vim.cmd("Git commit -m '[Add] " .. input .. "'")
+			vim.cmd("Git commit -S -m '[Add] " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit [Add]" })
@@ -135,7 +135,7 @@ end, { desc = "Git commit [Add]" })
 keymap.set("n", "<leader>gcf", function()
 	vim.ui.input({ prompt = "[Fix]" }, function(input)
 		if input then
-			vim.cmd("Git commit -m '[Fix] " .. input .. "'")
+			vim.cmd("Git commit -S -m '[Fix] " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit [Fix]" })
@@ -144,7 +144,7 @@ end, { desc = "Git commit [Fix]" })
 keymap.set("n", "<leader>gcd", function()
 	vim.ui.input({ prompt = "[Docs]" }, function(input)
 		if input then
-			vim.cmd("Git commit -m '[Docs] " .. input .. "'")
+			vim.cmd("Git commit -S -m '[Docs] " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit [Docs]" })
@@ -152,7 +152,7 @@ end, { desc = "Git commit [Docs]" })
 keymap.set("n", "<leader>gcs", function()
 	vim.ui.input({ prompt = "[Style]" }, function(input)
 		if input then
-			vim.cmd("Git commit -m '[Style] " .. input .. "'")
+			vim.cmd("Git commit -S -m '[Style] " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit [Style]" })
@@ -160,7 +160,7 @@ end, { desc = "Git commit [Style]" })
 keymap.set("n", "<leader>gcx", function()
 	vim.ui.input({ prompt = "[Refactor]" }, function(input)
 		if input then
-			vim.cmd("Git commit -m '[Refactor] " .. input .. "'")
+			vim.cmd("Git commit -S -m '[Refactor] " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit [Refactor]" })
@@ -168,7 +168,7 @@ end, { desc = "Git commit [Refactor]" })
 keymap.set("n", "<leader>gct", function()
 	vim.ui.input({ prompt = "[Test]" }, function(input)
 		if input then
-			vim.cmd("Git commit -m '[Test] " .. input .. "'")
+			vim.cmd("Git commit -S -m '[Test] " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit [Test]" })
@@ -176,7 +176,7 @@ end, { desc = "Git commit [Test]" })
 keymap.set("n", "<leader>gcc", function()
 	vim.ui.input({ prompt = "[Change]" }, function(input)
 		if input then
-			vim.cmd("Git commit -m '[Change] " .. input .. "'")
+			vim.cmd("Git commit -S -m '[Change] " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit [Change]" })
@@ -184,7 +184,7 @@ end, { desc = "Git commit [Change]" })
 keymap.set("n", "<leader>gcr", function()
 	vim.ui.input({ prompt = "[Remove]" }, function(input)
 		if input then
-			vim.cmd("Git commit -m '[Remove] " .. input .. "'")
+			vim.cmd("Git commit -S -m '[Remove] " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit [Remove]" })
@@ -192,7 +192,7 @@ end, { desc = "Git commit [Remove]" })
 keymap.set("n", "<leader>gcu", function()
 	vim.ui.input({ prompt = "[Update]" }, function(input)
 		if input then
-			vim.cmd("Git commit -m '[Update] " .. input .. "'")
+			vim.cmd("Git commit -S -m '[Update] " .. input .. "'")
 		end
 	end)
 end, { desc = "Git commit [Update]" })
