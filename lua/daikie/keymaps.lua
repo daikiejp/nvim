@@ -80,9 +80,9 @@ M.on_attach = function(_, bufnr)
   bufmap("n", "gd", vim.lsp.buf.definition, "LSP Go to Definition")
   bufmap("n", "<leader>ca", vim.lsp.buf.code_action, "LSP Code Action")
   --bufmap("n", "<leader>rn", vim.lsp.buf.rename, "LSP Rename")
-  --bufmap("n", "[d", vim.diagnostic.goto_prev, "Prev Diagnostic")
-  --bufmap("n", "]d", vim.diagnostic.goto_next, "Next Diagnostic")
-  --bufmap("n", "<leader>e", vim.diagnostic.open_float, "Diagnostic Float")
+  bufmap("n", "[d", vim.diagnostic.goto_prev, "Prev Diagnostic")
+  bufmap("n", "]d", vim.diagnostic.goto_next, "Next Diagnostic")
+  bufmap("n", "<leader>z", vim.diagnostic.open_float, "Diagnostic Float")
 end
 
 return M
