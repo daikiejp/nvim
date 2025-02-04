@@ -44,6 +44,7 @@ brew install gcc clang make
 | markdown | marksman  | brew install marksman |
 | yaml | yamlls | brew install yaml-language-server |
 ｜tailwind | tailwindcss| brew install tailwindcss-language-server |
+| astro | astro | pnpm install -g typescript & pnpm install -g @astrojs/language-server |
 
 > Note - If some npm package is uninstalled. Need install brew package again.
 

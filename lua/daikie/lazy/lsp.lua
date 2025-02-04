@@ -58,5 +58,17 @@ return {
         capabilities = capabilities,
     }
 
+    lspconfig.astro.setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+        init_options = {
+            filetypes = { "astro" },
+            typescript = {
+                tsdk = vim.env.HOME .. "/Library/pnpm/global/5/node_modules/typescript/lib/"
+            }
+        },
+        root_makers = { "package.json", "tsconfig.json", "jsconfig.json", ".git" }
+    }
+
     end,
 }
