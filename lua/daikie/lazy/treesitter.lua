@@ -16,6 +16,8 @@ return {
 					"python",
 					"html",
 					"css",
+                    "astro",
+                    "prisma",
 				},
 				highlight = { enable = true },
 				indent = { enable = true },
