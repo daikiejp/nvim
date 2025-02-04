@@ -12,6 +12,7 @@ return {
                 typescriptreact = { "prettierd", "prettier", stop_after_first = true },
                 ["javascript.jsx"] = { "prettierd", "prettier", stop_after_first = true },
                 ["typescript.tsx"] = { "prettierd", "prettier", stop_after_first = true },
+                astro = { "prettierd", "prettier", stop_after_first = true },
                 markdown = { "prettier" },
                 html = { "prettier" },
                 css = { "prettier" },
