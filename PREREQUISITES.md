@@ -43,6 +43,7 @@ brew install gcc clang make
 | json | jsonls | (same as above) |
 | markdown | marksman  | brew install marksman |
 | yaml | yamlls | brew install yaml-language-server |
+｜tailwind | tailwindcss| brew install tailwindcss-language-server |
 
 > Note - If some npm package is uninstalled. Need install brew package again.
 

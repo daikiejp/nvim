@@ -52,5 +52,11 @@ return {
         on_attach = on_attach,
         capabilities = capabilities,
     }
-  end,
+
+    lspconfig.tailwindcss.setup {
+        on_attach = on_attach,
+        capabilities = capabilities,
+    }
+
+    end,
 }
